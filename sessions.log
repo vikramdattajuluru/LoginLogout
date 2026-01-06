@@ -1,0 +1,28 @@
+alice login 2024-01-01 09:00:00
+alice logout 2024-01-01 17:00:00
+
+bob login 2024-01-01 22:00:00
+bob logout 2024-01-02 02:00:00
+
+charlie login 2024-01-01 09:00:00
+charlie logout 2024-01-01 13:00:00
+charlie login 2024-01-01 14:00:00
+charlie logout 2024-01-02 18:00:00
+charlie login 2024-01-01 19:00:00
+charlie logout 2024-01-02 18:00:00
+
+dave login 2024-01-01 10:00:00  # Dave forgot to log out
+
+eve login 2024-01-02 08:00:00
+eve logout 2024-01-02 16:00:00
+
+# Multiple sessions for the same user
+frank login 2024-01-01 09:00:00
+frank logout 2024-01-01 12:00:00
+frank login 2024-01-01 13:00:00
+frank logout 2024-01-01 17:00:00
+frank login 2024-01-02 09:00:00  # Frank is still logged in
+
+# User with session spanning midnight
+grace login 2024-01-01 23:30:00
+grace logout 2024-01-03 01:45:00
