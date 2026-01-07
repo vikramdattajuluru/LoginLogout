@@ -44,15 +44,6 @@ public class Main {
 
                 if ("login".equalsIgnoreCase(action)) {
                     sessions.add(new Session(timestamp));
-                } else if ("logout".equalsIgnoreCase(action)) {
-                    // Find the last open session to close
-                    for (int i = sessions.size() - 1; i >= 0; i--) {
-                        Session s = sessions.get(i);
-                        if (s.logoutTime == null) {
-                            s.logoutTime = timestamp;
-                            break;
-                        }
-                    }
                 }
             }
 
